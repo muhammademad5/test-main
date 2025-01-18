@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Details</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div id="bookDetails">
+        <h1 id="bookTitle"></h1>
+        <p id="bookAuthor"></p>
+        <p id="bookDescription"></p>
+        <p id="bookDuration"></p>
+        <!-- ****************************************************************** -->
+        <!-- <img id="bookCover" src="" alt="Book Cover" style="max-width: 300px; margin: 20px 0;" />
+        <audio id="audioPlayer" controls style="margin: 20px 0;">
+            <source id="audioSource" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> -->
+        <!-- ****************************************************************** -->
+        <button onclick="playAudio()">Play</button>
+        <div class="interactions">
+            <button id="likeButton" onclick="likeBook()">Like</button>
+            <button id="dislikeButton" onclick="dislikeBook()">Dislike</button>
+        </div>
+        <div id="commentsSection">
+            <textarea id="commentInput" placeholder="Add a comment..."></textarea>
+            <button onclick="addComment()">Add Comment</button>
+            <div id="commentsList"></div>
+        </div>
+    </div>
+    <h2>Related Books</h2>
+    <div id="relatedBooks" class="audiobooks-container"></div>
+    
+    <script type="module" src="js/details.js"></script>
+</body>
+</html>
